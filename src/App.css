@@ -1,0 +1,30 @@
+
+/* .body{
+  
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.box1{
+  height: 100px;
+  width: 70%;
+  border: 2px solid black;
+
+}
+.box2{
+  min-height: 400px;
+  width: 70%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+
+} */
