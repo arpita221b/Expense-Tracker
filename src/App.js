@@ -2,6 +2,7 @@ import "./App.css";
 import Expenses from "./Components/ExpenseItem/Expenses";
 import "./Components/ExpenseItem/Expenses.css";
 import NewExpense from "./Components/NewExpense";
+import ExpensesFilter from "./Components/ExpensesFilter";
 
 function App() {
   const expenses = [
@@ -30,10 +31,14 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-
+  const addExpenseHandler = (expense) => {
+    console.log("App.js");
+    console.log(expense);
+  };
   return (
     <div>
-      <NewExpense />
+      <NewExpense addExpenseHandlerProp={addExpenseHandler} />
+
       <Expenses items={expenses} />
     </div>
   );
