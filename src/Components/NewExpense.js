@@ -1,11 +1,17 @@
-import './NewExpense.css'
-import ExpenseForm from './ExpenseForm';
+import "./NewExpense.css";
+import ExpenseForm from "./ExpenseForm";
 const NewExpense = () => {
-return (
-  <div className='new-expense'>
-  <ExpenseForm/>
-  </div>
-);
+  const onSubmitExpense = (enteredExpenseData) => {
+    const expenseData = {
+      ...enteredExpenseData,
+      id: Math.random().toString(),
+    };
+  };
 
-}
+  return (
+    <div className="new-expense">
+      <ExpenseForm onSaveExpenseData={onSubmitExpense} />
+    </div>
+  );
+};
 export default NewExpense;
