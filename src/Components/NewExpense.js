@@ -3,8 +3,8 @@ import ExpenseForm from "./ExpenseForm";
 const NewExpense = (props) => {
   const onSubmitExpense = (enteredExpenseData) => {
     const expenseData = {
-      ...enteredExpenseData,
       id: Math.random().toString(),
+      ...enteredExpenseData,
     };
     props.addExpenseHandlerProp(expenseData);
   };
