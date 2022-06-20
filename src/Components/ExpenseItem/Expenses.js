@@ -8,21 +8,30 @@ function Expenses(props) {
 
   const getYear = (enteredYear) => {
     setYear(enteredYear);
-    console.log(enteredYear);
   };
+
+  const filteredExpenses = props.items.filter((expense) => {
+    return expense.date.getFullYear().toString() === year;
+  });
+
+  let expensesContent = <p>Nope</p>;
+  if (filteredExpenses.length > 0) {
+    expensesContent = filteredExpenses.map((expense) => {
+      return (
+        <ExpenseItem
+          key={expense.id}
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+        />
+      );
+    });
+  }
+
   return (
     <Card className="expenses">
       <ExpensesFilter selected={year} onChangeOption={getYear} />
-      {props.items.map((expense) => {
-        return (
-          <ExpenseItem
-            key={expense.id}
-            title={expense.title}
-            amount={expense.amount}
-            date={expense.date}
-          />
-        );
-      })}
+      {expensesContent}
     </Card>
   );
 }
