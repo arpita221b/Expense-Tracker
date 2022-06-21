@@ -20,14 +20,13 @@
 
 .expense-item h2 {
   color: #3a3a3a;
-  font-size: 1rem;
+  font-size: 0.8rem;
   flex: 1;
   margin: 0 1rem;
   color: black;
 }
 
 .expense-item__price {
-  font-size: 1rem;
   font-weight: bold;
   color: white;
   background: linear-gradient(89.73deg, #5248f7 1.69%, #0c02af 114.68%);
@@ -44,11 +43,11 @@
   }
 
   .expense-item__description h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .expense-item__price {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 0.5rem 2.5rem;
   }
 }

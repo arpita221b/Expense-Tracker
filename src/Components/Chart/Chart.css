@@ -1,7 +1,7 @@
 .chart {
   padding: 1rem;
   border-radius: 12px;
-
+  background: linear-gradient(89.73deg, #5248f7 1.69%, #0c02af 114.68%);
   text-align: center;
   display: flex;
   justify-content: space-around;

@@ -14,9 +14,9 @@
   padding: 1rem 2rem;
   background: linear-gradient(89.73deg, #5248f7 1.69%, #0c02af 114.68%);
   color: white;
-  margin-right: 1rem;
   border: none;
   transition: 0.3s ease-in;
+  min-width: 160px;
 }
 
 .new-expense button:hover,
@@ -33,4 +33,10 @@
 .new-expense button.alternative:hover,
 .new-expense button.alternative:active {
   background-color: #ddb3f8;
+}
+@media screen and (max-width: 422px) {
+  .new-expense button {
+    padding: 0.5rem 1rem;
+    min-width: 100px;
+  }
 }
