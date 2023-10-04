@@ -1,6 +1,7 @@
 import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 import { useState } from "react";
+
 const NewExpense = (props) => {
   const onSubmitExpense = (enteredExpenseData) => {
     const expenseData = {

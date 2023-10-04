@@ -14,7 +14,7 @@ const Dummy_Expenses = [
     id: "e2",
     title: "Telescope",
     amount: 799.49,
-    date: new Date(2021, 2, 12),
+    date: new Date(2023, 2, 12),
   },
   {
     id: "e3",
